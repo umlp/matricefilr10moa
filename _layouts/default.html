@@ -58,7 +58,7 @@
         T : {{ today_date }}
         
         {% if public_present > 0 %}
-          {% if publi_date < today_date %}
+          {% if publi_date > today_date %}
             <H1> Document en cours de rédaction - sortie prévue {{ page.date_publi }}<H1>
           {% else %}        
             {{ content }}
