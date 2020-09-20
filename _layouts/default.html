@@ -45,7 +45,16 @@
       </header>
 
       <section>
-        {{ content }}
+        <!-- seules pages dont la date de validation est présente sont affichées -->
+        {% assign today_date = 'now' | date: '%d-%m-%Y' %}
+        {% assign public_date = page.date_publication | date: '%d-%m-%Y' %}
+        {% assign valida_date = page.date_validation  | date: '%d-%m-%Y' %}
+        {% assign approb_date = page.date_approbation | date: '%d-%m-%Y' %}
+        {% if publi_date < today_date %}
+          <H1> Document en cours de rédaction - sortie prévue {{ page.date_publi }}<H1>
+        {% else %}        
+          {{ content }}
+        {% endif %}
       </section>
 
       <footer>
