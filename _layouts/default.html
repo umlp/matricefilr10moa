@@ -48,11 +48,11 @@
         <!-- seules pages dont la date de validation est présente sont affichées -->
         {% assign today_date = 'now' | date: '%s' %}
         {% assign public_date = page.date_publication | date: '%s' %}
-        {% assign public_present = page.date_publication | size %}
+        {% assign public_present = public_date | size %}
         {% assign valida_date = page.date_validation  | date: '%s' %}
         {% assign approb_date = page.date_approbation | date: '%s' %}
-        {% assign approb_present = page.date_approbation | size %}
-        P : {{ page.date_publication }}
+        {% assign approb_present = approb_date | size %}
+        P : {{ public_date }}
         V : {{ page.date_validation }}
         T : {{ today_date }}
         
