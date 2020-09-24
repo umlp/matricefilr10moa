@@ -1,1 +1,9 @@
+# personnaliser le site à votre marque en remplaçant
+# nom_intuition par le nom de votre intuition
+# mon_equipe par le nom de votre équipe
+# 
+intuition: mon_intuition
+nom_equipe: mon_equipe
+code_equipe: 0Z
+
 theme: jekyll-theme-dinky
