@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h3 class="header">{{ site.intuition | default: site.github.repository_name }}</h3>
+        <h2 class="header">{{ site.intuition | default: site.github.repository_name }}</h2>
         <p class="header">[{{ site.code_equipe | default: '0Z' }}] {{ site.nom_equipe | default: site.github.project_tagline }} </p>
 
         <ul>
@@ -27,11 +27,12 @@
           {% endif %}
           <li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>
           -->
-            <li class="download">{{ site.url }}</li>
-            <li class="download">{{ site.baseurl }}</li>
+            <!-- <li class="download">{{ site.url }}</li>
+            <li class="download">{{ site.baseurl }}</li> -->
             <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/105.liste_idees_brutes.html">Liste idées brutes</a></li>          
             <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/110.grille_levesque.html">Grille de Levesques</a></li>
-            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/112.liste_exigences_qualifiees.html">Liste d'exigences qualifiées</a></li>
+            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/112.liste_exigences_qualifiees.html">Liste d'exigences</a></li>
+            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/112.liste_exigences_qualifiees.html">Cahier des charges</a></li>
         </ul>
 
         {% if site.github.is_project_page %}
