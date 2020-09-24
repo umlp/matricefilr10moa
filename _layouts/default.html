@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h2 class="header">{{ site.intuition | default: site.github.repository_name }}</h2>
+        <p class="header"><b>{{ site.intuition | default: site.github.repository_name }}</b></p>
         <p class="header">[{{ site.code_equipe | default: '0Z' }}] {{ site.nom_equipe | default: site.github.project_tagline }} </p>
 
         <ul>
@@ -29,12 +29,13 @@
           -->
             <!-- <li class="download">{{ site.url }}</li>
             <li class="download">{{ site.baseurl }}</li> -->
+            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/102.equipe_motivee.html">Equipe motivée</a></li>                    
             <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/105.liste_idees_brutes.html">Liste idées brutes</a></li>          
             <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/110.grille_levesque.html">Grille de Levesques</a></li>
             <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/112.liste_exigences_qualifiees.html">Liste d'exigences</a></li>
-            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/112.liste_exigences_qualifiees.html">Cahier des charges</a></li>
+            <li class="download"><a href="{{ site.url }}{{ site.baseurl }}/1.INIT/120.cdc.html">Cahier des charges</a></li>
         </ul>
-
+<!--
         {% if site.github.is_project_page %}
           <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
@@ -44,6 +45,7 @@
             <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
           </ul>
         {% endif %}
+-->
       </header>
 
       <section>
